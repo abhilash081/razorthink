@@ -1,0 +1,130 @@
+body{
+	margin: 0;
+	padding:0;
+	
+}
+.mainContainer{
+	height: 100%;
+	width: 100%;
+}
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+}
+.container{
+	float: left;
+	height: 100%;
+}
+.navContainer{
+	width: 100%;
+}
+
+.navItem{
+	text-decoration: none;
+    display: inline-block;
+    margin: 5px 0px;
+    padding: 0px 60px;
+    width: 100%;
+}
+.navSpan{
+	padding: 3px 8px;
+	color: white;
+    font-family: 'Dosis', sans-serif;
+    border-radius: 5px;
+}
+.aImg{ 
+	display:block;
+	width: 100%;
+    height: 275px;
+    background: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.containerLeft{
+	overflow: hidden;
+	position: relative;
+	width: 230px;
+	background-color: #2D2D2D;
+	background-image: url(../images/10.png);
+}
+.containerRight{
+	padding: 140px 510px 0px 80px;
+	width: calc(100% - 230px);
+  	background-color:#FBFBFB;
+	background-image: url(../images/bg_main.png);
+}
+.headWelcome{
+	margin:0;
+	font-size: 90px;
+	font-weight: lighter;
+	color: #242C37;
+	font-family: 'Dosis', sans-serif;
+}
+.pheadSub{
+	line-height: 1.5;
+    margin: 0;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #2D2D2D;
+    font-family: 'Dosis', sans-serif;
+}
+
+.headSub2{
+	border-radius: 2px;
+	border-top: 3px solid #CCB44A;
+	border-bottom: 3px solid #CCB44A;
+	padding: 10px 0px;
+	font-size: 28px;
+	margin:10px 0px;
+	color: #2F2F2F;
+	font-family: 'Roboto Slab', serif;
+}
+.pAbout{
+	word-spacing: 1px;
+	line-height: 1.7;
+	font-size: 13px;
+	font-family: 'Dosis', sans-serif;
+}
+.footercontainer{
+	position: absolute;
+	bottom: 15px;
+	width: 100%;
+}
+.footerP{
+	text-align: center;
+	font-size: 10px;
+	color: white;
+	font-family:  'Dosis', sans-serif;
+}
+.footerP>span{
+	color: yellow;
+}
+.navItem:hover .navspan{
+	background-color: #020202;
+}
+.navItem:hover:after{
+	visibility: visible;
+}
+.navItem:after{
+	visibility: hidden;
+	position: absolute;
+    right: 0;
+    content: "";
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-right: 5px solid white;
+	transform: translate(0%,110%);
+}
+.aImg:before{
+	display: block;
+    content: '';
+    width: 100%;
+    border: 1px solid #00000054;
+    margin-top: 5px;
+}
+.clearfix:after{
+	content:'';
+	display: block;
+	clear: both;
+}
